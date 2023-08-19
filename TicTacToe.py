@@ -80,7 +80,8 @@ def unentschieden(spiel_aktiv):
       and (spielfeld[6] == "X" or spielfeld[6] == "O") \
       and (spielfeld[7] == "X" or spielfeld[7] == "O") \
       and (spielfeld[8] == "X" or spielfeld[8] == "O") \
-      and (spielfeld[9] == "X" or spielfeld[9] == "O"):
+      and (spielfeld[9] == "X" or spielfeld[9] == "O") \
+      and gewonnen_check == False: 
         print("UNENTSCHIEDEN")
         spiel_aktiv = False
     return spiel_aktiv
